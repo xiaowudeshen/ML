@@ -18,8 +18,8 @@ for num in range(100000):
         err = (a*x[index] + b) - y[index]
         avg_sum += err
         err_a += x[index]*err
-        err_b += err
-    avg_sum = avg_sum**2/len(x)
+        err_b += err**2
+    avg_sum = avg_sum/len(x)
     if avg_sum < 0.0001:
         break
     gradient_a = 2*err_a/len(x)
