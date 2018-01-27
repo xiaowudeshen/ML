@@ -16,9 +16,9 @@ for num in range(100000):
     err_b = 0
     for index in range(len(x)):
         err = (a*x[index] + b) - y[index]
-        avg_sum += err
+        avg_sum += err**2
         err_a += x[index]*err
-        err_b += err**2
+        err_b += err
     avg_sum = avg_sum/len(x)
     if avg_sum < 0.0001:
         break
