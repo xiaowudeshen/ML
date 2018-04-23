@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#参考文章https://mp.csdn.net/postedit/80019591
+#转自文章https://mp.csdn.net/postedit/80019591
 # 单变量特征选择
 # 1.Pearson相关系数Pearson Correlation
 import numpy as np
