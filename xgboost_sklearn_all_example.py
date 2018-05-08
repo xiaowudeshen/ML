@@ -77,7 +77,9 @@ clf = xgb.XGBClassifier()
 clf.fit(X_train, y_train, early_stopping_rounds=10, eval_metric="error",
         eval_set=[(X_test, y_test)])
 
-print(clf.feature_importances_)
-xgb.plot_importance(clf)
-xgb.plot_tree(clf)
+print(clf.feature_importances_)  #输出特征的重要度
+xgb.plot_importance(clf)         #画出特征的重要度
+xgb.plot_tree(clf)              
 plt.show()
+
+print(clf.apply(X))  #输出X落在不同树中的叶子节点编号
