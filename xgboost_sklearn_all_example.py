@@ -77,3 +77,7 @@ clf = xgb.XGBClassifier()
 clf.fit(X_train, y_train, early_stopping_rounds=10, eval_metric="error",
         eval_set=[(X_test, y_test)])
 
+print(clf.feature_importances_)
+xgb.plot_importance(clf)
+xgb.plot_tree(clf)
+plt.show()
