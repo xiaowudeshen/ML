@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 #!/bin/python
+#xgboost的接口XGBClassifier - 是xgboost的sklearn包。这个包允许我们像GBM一样使用Grid Search 和并行处理
+#from xgboost.sklearn import XGBClassifier  可以这样导入 XGBClassifier  参考https://blog.csdn.net/liulina603/article/details/78771738
 
 import pickle
 import xgboost as xgb
