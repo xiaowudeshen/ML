@@ -1,6 +1,7 @@
 #!/bin/python
 
 # -*- coding: utf-8 -*-
+#xgboost原始接口进行交叉验证、训练，参数调整
 import numpy as np
 import xgboost as xgb
 from sklearn.utils import shuffle
