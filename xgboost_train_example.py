@@ -1,6 +1,7 @@
 #!/bin/python
 
 # -*- coding: utf-8 -*-
+#使用xgboost原始接口训练
 import numpy as np
 import xgboost as xgb
 from sklearn.utils import shuffle
