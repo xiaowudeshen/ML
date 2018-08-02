@@ -43,6 +43,7 @@ class RNN:
 
         D_U = np.zeros_like(self.U)
         D_Bxh = np.zeros_like(self.Bxh)
+        #计算delta_t_k
         delta_t_k_list = []
         delta_t_k_list.insert(0,delta_T_T)
         for t in range(T-1, -1, -1):
@@ -50,8 +51,7 @@ class RNN:
             delta_t_k = df_st*np.dot(np.transpose(self.W), delta_T_T)
             delta_T_T = delta_t_k
             delta_t_k_list.insert(0,delta_t_k)
-        
-        
+        #计算delta_U,delta_W,delta_V,delta_Bhy,delta_Bxh
         for t in range(T):
             dQ = (output[t] - y[:, t])
             D_V += np.outer(dQ, h[t])
@@ -64,9 +64,10 @@ class RNN:
                     D_W += np.outer(delta_t_k_list[k], h[k-1])
                     
             loss += np.sum(-y[:, t]*np.log(output[t]))
+        #调整delta_U,delta_W,delta_V,delta_Bhy,delta_Bxh,防止过大或者过小，在一定程度上减少梯度膨胀
         for dparam in [D_V, D_Bhy, D_U, D_Bxh, D_W]:
             np.clip(dparam, -5, 5, out=dparam)
-
+        #参数更新
         self.U -= lr*D_U 
         self.W -= lr*D_W 
         self.V -= lr*D_V
