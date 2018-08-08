@@ -51,8 +51,8 @@ batch_size = 64
 learning_rate = 1e-2
 num_epoches = 20
 
-#把各种预处理操作组合到一起，transforms.ToTensor()将图片转换成pytorch中处理的对象Tensor，在转化的过程中pytorch自动将图片标准化了，也就是说结果范围是0~1
-#transforms.Normalize([0.5], [0.5])表示减去0.5,再除以0.5，将图片转化到-1~1之间
+#把各种预处理操作组合到一起，transforms.ToTensor()将图片转换成pytorch中处理的对象Tensor，在转化的过程中pytorch自动将图片标准化了，
+#也就是说结果范围是0~1；transforms.Normalize([0.5], [0.5])表示减去0.5,再除以0.5，将图片转化到-1~1之间
 data_tf = transforms.Compose([transforms.ToTensor(), transforms.Normalize([0.5], [0.5])])
 
 train_dataset = datasets.MNIST(root='mnist', train=True, transform=data_tf, download=True )
