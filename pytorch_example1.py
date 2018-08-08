@@ -5,6 +5,7 @@ from torch import nn, optim
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
+#没有激活函数
 class simpleNet(nn.Module):
     def __init__(self, in_dim, n_hidden_1, n_hidden_2, out_dim):
         super(simpleNet, self).__init__()
@@ -17,7 +18,8 @@ class simpleNet(nn.Module):
         x = self.layer2(x)
         x = self.layer3(x)
         return x
-        
+    
+#加了非线性激活函数        
 class Activation_Net(nn.Module):
     def __init__(self, in_dim, n_hidden_1, n_hidden_2, out_dim):
         super(Activation_Net, self).__init__()
@@ -31,7 +33,7 @@ class Activation_Net(nn.Module):
         x = self.layer3(x)
         return x
        
-       
+#加了批标注化和非线性激活函数       
 class Batch_Net(nn.Module):
     def __init__(self, in_dim, n_hidden_1, n_hidden_2, out_dim):
         super(Batch_Net, self).__init__()
@@ -49,6 +51,8 @@ batch_size = 64
 learning_rate = 1e-2
 num_epoches = 20
 
+#把各种预处理操作组合到一起，transforms.ToTensor()将图片转换成pytorch中处理的对象Tensor，在转化的过程中pytorch自动将图片标准化了，也就是说结果范围是0~1
+#transforms.Normalize([0.5], [0.5])表示减去0.5,再除以0.5，将图片转化到-1~1之间
 data_tf = transforms.Compose([transforms.ToTensor(), transforms.Normalize([0.5], [0.5])])
 
 train_dataset = datasets.MNIST(root='mnist', train=True, transform=data_tf, download=True )
