@@ -52,7 +52,7 @@ if __name__ == '__main__':
     ax4.set_xlabel("recall")
     ax4.set_ylabel("precision")
     plt.plot(recall, precision, '#9ACD32')
-    plt.savefig("data7.jpg")
+    plt.savefig("roc_F1_prec_recall.jpg")
     plt.show()
 
 
