@@ -1,0 +1,23 @@
+hadoop  jar   $HADOOP_HOME/contrib/streaming/hadoop-2-streaming.jar \
+-D stream.num.map.output.key.fields=
+-D num.key.fields.for.partition=
+-D mapred.job.name=
+-D mapred.job.map.capacity=
+-D mapred.job.reduce.capacity=
+-D mapred.map.capacity.per.tasktracker=
+-D mapred.reduce.capacity.per.tasktracker=
+-D mapred.max.split.size=
+-D mapred.map.tasks=
+-D mapred.reduce.tasks=
+-D mapred.job.priority
+-cacheArchive  "python.3.7.5.tar.gz#python3"
+-cacheArchive
+-partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner\
+-input
+-input
+-output
+-file
+-file
+-file
+-mapper 'python3/bin/python  t.py map'
+-reducer 'python3/bin/python t.py reduce'
