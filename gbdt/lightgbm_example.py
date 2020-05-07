@@ -15,7 +15,7 @@ parameters = {'n_estimators':[60,70,80,90,100],'learning_rate': [0.01, 0.02, 0.0
 # parameters = {'n_estimators':[1,10,20,30,40,50,60],'learning_rate': [0.01, 0.02, 0.03], 'max_depth': [4, 5, 6]}
 # parameters = {'min_child_weight':[1,2,3,4,5,6]}
 clf = GridSearchCV(lgb_model, parameters, scoring='roc_auc',verbose=1,cv=5)
-clf.fit(data, target)
+clf.fit(X_train, y_train)
 print(clf.best_score_)
 print(clf.best_params_)
 
