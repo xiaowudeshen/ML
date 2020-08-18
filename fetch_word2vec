@@ -5,6 +5,10 @@ https://nlp.stanford.edu/projects/glove/
 code:
 https://github.com/stanfordnlp/GloVe
 
+git clone http://github.com/stanfordnlp/glove
+cd glove && make
+./demo.sh
+
 2. google   word2vec
 
 https://code.google.com/archive/p/word2vec/source/default/source
