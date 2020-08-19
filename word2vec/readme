@@ -17,6 +17,18 @@ Download the code: svn checkout http://word2vec.googlecode.com/svn/trunk/
 Run 'make' to compile word2vec tool
 Run the demo scripts: ./demo-word.sh and ./demo-phrases.sh
 
+
+
+评估训练的word2vec的相关性
+word2vec_file 为Glove, word2vec训练的词向量，txt格式
+
+import gensim.models
+model = gensim.models.KeyedVectors.load_word2vec_format("word2vec_file")
+model.wv.most_similar("美女")
+model.wv["美食"]
+
+
+
 3.libFM
 
 http://www.libfm.org/
@@ -24,3 +36,4 @@ http://www.libfm.org/
 manual.pdf   http://www.libfm.org/libfm-1.42.manual.pdf
 
 code: https://github.com/srendle/libfm
+
