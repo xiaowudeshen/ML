@@ -41,3 +41,8 @@ code: https://github.com/srendle/libfm
 4.libMF
 https://www.csie.ntu.edu.tw/~cjlin/libmf/
 https://github.com/cjlin1/libmf
+4.1 real-valued matrix factorization
+4.2 binary matrix factorization 
+4.3 one-class matrix factorization
+
+
