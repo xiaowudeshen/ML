@@ -34,6 +34,7 @@ model.similarity("美食","美女")  # 相关性得分
 
 http://www.libfm.org/
 
+
 manual.pdf   http://www.libfm.org/libfm-1.42.manual.pdf
 
 code: https://github.com/srendle/libfm
@@ -62,3 +63,6 @@ https://github.com/snap-stanford/snap/tree/master/examples/randwalk
 https://github.com/snap-stanford/snap/tree/master/examples/node2vec
 
 
+8.SimRank
+https://pypi.org/project/graphsim/
+https://pypi.org/project/graphsim/
