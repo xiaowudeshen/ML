@@ -42,6 +42,7 @@ def InitUnigramTable(vocab_fre_dict, table_size = 1e8):
     return table
 
 
-
+next_random = next_random * (unsigned long long)25214903917 + 11;
+target = table[(next_random >> 16) % table_size];
 
 
