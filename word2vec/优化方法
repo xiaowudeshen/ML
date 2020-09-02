@@ -23,7 +23,23 @@ for i in range(EXP_TABLE_SIZE):
 
 2.负采样概率表
 
+def InitUnigramTable(vocab_fre_dict, table_size = 1e8):
+    a, i, d1, power = 0, 0, 0, 0.75
+    train_words_pow = 0
+    vocab_size = len(vocab_fre_dict)
+    table = {}
+    for a in range(vocab_size):
+        train_words_pow += pow(vocab_fre_dict[a],power)
+    d1 = pow(vocab_fre_dict[i], power)/train_words_pow
+    for a in range(table_size):
+        table[a] = i
+        if (a / table_size > d1):
+            i+=1
+            d1 += pow(vocab_fre_dict[i], power) / train_words_pow;
 
+        if (i >= vocab_size):
+            i = vocab_size - 1
+    return table
 
 
 
