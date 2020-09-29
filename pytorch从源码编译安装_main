@@ -1,0 +1,23 @@
+更新gcc版本到7+（http://www.vpser.net/manage/centos-6-upgrade-gcc.html）
+
+yum -y install centos-release-scl
+yum -y install devtoolset-7-gcc devtoolset-7-gcc-c++ devtoolset-7-binutils
+scl enable devtoolset-7 bash
+
+echo "source /opt/rh/devtoolset-7/enable" >> ~/.bash_profile
+
+安装:https://github.com/pytorch/pytorch
+1.下载pytorch源码
+git clone --recursive https://github.com/pytorch/pytorch
+cd pytorch
+# if you are updating an existing checkout
+git submodule sync
+git submodule update --init --recursive
+
+2.export CMAKE_PREFIX_PATH=${CONDA_PREFIX:-"$(dirname $(which conda))/../"}
+python setup.py install
+
+
+3.删除pytorch目录下的build目录，重新编译
+rm -rf build 
+python setup.py install
