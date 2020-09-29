@@ -7,7 +7,7 @@ scl enable devtoolset-7 bash
 echo "source /opt/rh/devtoolset-7/enable" >> ~/.bash_profile
 
 安装:https://github.com/pytorch/pytorch
-1.下载pytorch源码
+1.下载pytorch源码,速度会很慢，可以考虑修改本地git信息，提升git速度，再下载。或者使用别人下号的，再update
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
 # if you are updating an existing checkout
