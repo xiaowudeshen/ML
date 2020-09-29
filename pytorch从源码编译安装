@@ -21,3 +21,7 @@ python setup.py install
 3.删除pytorch目录下的build目录，重新编译
 rm -rf build 
 python setup.py install
+
+4.安装好后，执行
+python setup.py develop && python -c "import torch"
+
