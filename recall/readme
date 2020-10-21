@@ -1,3 +1,15 @@
+一.Neural Recommender Systems 
+
+NCF(Neural collaborative filtering_2017)
+NFM(Neural factorization machines for sparse predictive analytics_2017 )
+DeepFM(DeepFM: a factorization-machine based neural network for CTR prediction_2017)
+xDeepFM(xDeepFM: Combining explicit and implicit feature interactions for recommender systems_2018)
+DCN(Deep&crossnetwork for ad click predictions_2017)
+DMF(Deep Matrix Factorization Models for Recommender Systems_2017) 
+CMN(Collaborative memory network for recommendation systems_2018)
+
+二.Sequential Recommendation 
+
 1.多兴趣召回
 1.1 Controllable Multi-Interest Framework for Recommendation； 2020  https://github.com/THUDM/ComiRec
 1.2 Multi-Interest Network with Dynamic Routing for Recommendation at Tmall；2019
@@ -5,3 +17,39 @@
 2.基于翻译的召回
 2.1 Translation-based Factorization Machines for Sequential Recommendation；2018
 2.2 Translation-based Recommendation; 2017
+
+FPMC(Factorizing personalized markov chains for next-basket recommendation_2010)
+HRM(Learning hierarchical representation model for nextbasket recommendation_2015)
+GRU4Rec(Session-based recommendations with recurrent neural networks_2016)
+DREAM(A dynamic recurrent model for next basket recommendation_2016)
+Fossil(Fusing similarity models with markov chains for sparse sequential recommendation_2016)
+TransRec(Translation-based Recommendation_2017)
+RUM(Sequential recommendation with user memory networks_2018)
+SASRec (Self-attentive sequential recommendation_2018)
+DIN(Deep interest network for click-through rate prediction_2018)
+SDM(Sequential deep matching model for online large-scale recommender system)
+
+三.Recommendation Diversity
+
+Comparing context-aware recommender systems in terms of accuracy and diversity_2014
+Measuring playlist diversity for recommendation systems_2006
+
+3.1improving aggregated diversity 
+
+Improving aggregate recommendation diversity using ranking-based techniques_2011 
+An integrated recommender system for improved accuracy and aggregate diversity_2019 
+A new collaborative filtering approach for increasing the aggregate diversity of recommender systems_2013 
+Promoting diversity in recommendation by entropy regularizer_2013
+
+3.2the diversity of items recommended to individual users 
+
+Improving aggregate recommendation diversity using ranking-based techniques_2011 
+An analysis of users’ propensity toward diversity in recommendations_2014 
+Recommendation system based on statistical analysis of ranking from user_2013 
+Recommendation with diversity: An adaptive trust-aware model_2019 
+
+四.Attention 
+
+Representation learning for attributed multiplex heterogeneous network_2019 
+Atrank: An attention-based user behavior modeling framework for recommendation_2018
+
