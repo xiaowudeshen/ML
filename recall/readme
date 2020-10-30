@@ -56,3 +56,9 @@ Representation learning for attributed multiplex heterogeneous network_2019
 Atrank: An attention-based user behavior modeling framework for recommendation_2018
 A Structured Self-Attentive Sentence Embedding_2017
 
+
+五.Large Target Vocabulary 优化
+1.sample_softmax
+On Using Very Large Target Vocabulary for Neural Machine Translation  https://arxiv.org/pdf/1412.2007.pdf
+
+2.negative sampling  word2vec思想
