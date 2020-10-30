@@ -58,7 +58,11 @@ A Structured Self-Attentive Sentence Embedding_2017
 
 
 五.Large Target Vocabulary 优化
-1.sample_softmax
+1.candidate_sampling
+https://www.tensorflow.org/extras/candidate_sampling.pdf
+
+2.sample_softmax
 On Using Very Large Target Vocabulary for Neural Machine Translation  https://arxiv.org/pdf/1412.2007.pdf
 
-2.negative sampling  word2vec思想
+3.negative sampling  word2vec思想
+
