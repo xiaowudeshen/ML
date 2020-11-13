@@ -66,3 +66,7 @@ On Using Very Large Target Vocabulary for Neural Machine Translation  https://ar
 
 3.negative sampling  word2vec思想
 
+
+4. 讨论batch_size和error关系
+Accurate, Large Minibatch SGD:Training ImageNet in 1 Hour
+
