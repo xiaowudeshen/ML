@@ -70,3 +70,5 @@ On Using Very Large Target Vocabulary for Neural Machine Translation  https://ar
 4. 讨论batch_size和error关系
 Accurate, Large Minibatch SGD:Training ImageNet in 1 Hour
 
+large batch optimization for deep learning training bert in 76 minutes
+
