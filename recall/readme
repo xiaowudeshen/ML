@@ -72,3 +72,10 @@ Accurate, Large Minibatch SGD:Training ImageNet in 1 Hour
 
 large batch optimization for deep learning training bert in 76 minutes
 
+
+python 起服务
+python -m SimpleHTTPServer  port
+example:
+python -m SimpleHTTPServer 8888
+
+wget  htttp://ip:8888/data
