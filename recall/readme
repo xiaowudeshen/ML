@@ -28,7 +28,7 @@ TransRec(Translation-based Recommendation_2017)
 RUM(Sequential recommendation with user memory networks_2018)
 SASRec (Self-attentive sequential recommendation_2018)
 DIN(Deep interest network for click-through rate prediction_2018)
-SDM(Sequential deep matching model for online large-scale recommender system)
+SDM(Sequential deep matching model for online large-scale recommender system_2019)
 
 三.Recommendation Diversity
 
