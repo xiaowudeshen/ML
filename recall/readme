@@ -30,6 +30,9 @@ SASRec (Self-attentive sequential recommendation_2018)
 DIN(Deep interest network for click-through rate prediction_2018)
 SDM(Sequential deep matching model for online large-scale recommender system_2019)
 
+3.长短兴趣结合推荐
+Recurrent Neural Networks for Long and Short-Term Sequential Recommendation_2018
+
 三.Recommendation Diversity
 
 Comparing context-aware recommender systems in terms of accuracy and diversity_2014
