@@ -32,6 +32,9 @@ SDM(Sequential deep matching model for online large-scale recommender system_201
 
 3.长短兴趣结合推荐
 Recurrent Neural Networks for Long and Short-Term Sequential Recommendation_2018
+Neural Attentive Session-based Recommendation_2017
+Attention with Long-Term Interval-Based Deep Sequential Learning for Recommendation_2019
+Learning to Structure Long-term Dependence for Sequential Recommendation_2020
 
 三.Recommendation Diversity
 
