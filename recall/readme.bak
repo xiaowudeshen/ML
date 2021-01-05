@@ -30,6 +30,12 @@ SASRec (Self-attentive sequential recommendation_2018)
 DIN(Deep interest network for click-through rate prediction_2018)
 SDM(Sequential deep matching model for online large-scale recommender system_2019)
 
+3.长短兴趣结合推荐
+Recurrent Neural Networks for Long and Short-Term Sequential Recommendation_2018
+Neural Attentive Session-based Recommendation_2017
+Attention with Long-Term Interval-Based Deep Sequential Learning for Recommendation_2019
+Learning to Structure Long-term Dependence for Sequential Recommendation_2020
+
 三.Recommendation Diversity
 
 Comparing context-aware recommender systems in terms of accuracy and diversity_2014
@@ -56,8 +62,11 @@ Representation learning for attributed multiplex heterogeneous network_2019
 Atrank: An attention-based user behavior modeling framework for recommendation_2018
 A Structured Self-Attentive Sentence Embedding_2017
 
+五. Tree-based recall
+Learning Tree-based Deep Model for Recommender Systems_2018
 
-五.Large Target Vocabulary 优化
+
+六.Large Target Vocabulary 优化
 1.candidate_sampling
 https://www.tensorflow.org/extras/candidate_sampling.pdf
 
@@ -72,6 +81,39 @@ Accurate, Large Minibatch SGD:Training ImageNet in 1 Hour
 
 large batch optimization for deep learning training bert in 76 minutes
 
+七. SLIM
+ [1] Local Item-Item Models for Top-N Recommendation, Recsys, 2016
+
+ [2] SLIM: Sparse LInear Methods for top-n recommender systems, ICDM, 2011
+
+ [3] Sparse Linear Methods with Side Information for Top-N Recommendations, Recsys, 2012
+
+ [4] HOSLIM: Higher-Order Sparse Linear Method for Top-N Recommender Systems, PAKDD, 2014
+
+ [5] CSLIM: Contextual SLIM recommendation algorithms, Recsys, 2014
+
+ [6] Deviation-based contextual SLIM recommenders, CIKM, 2014
+
+ [7] Deviation-based and similarity-based contextual SLIM recommendation algorithms, Recsys, 2014
+
+ [8] Towards Improving Top-N Recommendation by Generalization of SLIM, Recsys, 2015
+
+ [9] Top-N Recommender System via Matrix Completionm, AAAI, 2016
+
+ [10] Practical linear models for large-scale one-class collaborative filtering, IJCAI, 2016
+
+ [11] Top-N recommendation with novel rank approximation, SDM, 2016
+
+ [12] Top-N Recommendation on Graphs, CIKM, 2016
+
+ [13] On the Effectiveness of Linear Models for One-Class Collaborative Filtering, AAAI, 2016
+
+ [14] Leveraging High-Dimensional Side Information for Top-N Recommendation, arXiv,2017
+
+ [15] Local Sparse Linear Model Ensemble for Top-N Recommendation, mlrec, 2017
+
+ [16] LorSLIM: Low Rank Sparse Linear Methods for Top-N Recommendations 2014
+ 
 
 python 起服务
 python -m SimpleHTTPServer  port
