@@ -65,6 +65,8 @@ https://github.com/snap-stanford/snap/tree/master/examples/randwalk
 7.node2vec
 https://github.com/snap-stanford/snap/tree/master/examples/node2vec
 
+https://github.com/aditya-grover/node2vec/tree/master/node2vec_spark
+
 
 8.SimRank
 https://pypi.org/project/graphsim/
