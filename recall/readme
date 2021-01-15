@@ -1,3 +1,12 @@
+各召回方法效果比较：
+ctr效果
+deepmatch(youtubu) u2i召回方法>slim u2i召回>language model u2i召回>graph2vec召回 >swing i2i召回> w2v i2i召回
+
+pv时长
+slim u2i召回>deepmatch(youtubu) u2i召回方法>language model u2i召回>swing i2i召回>w2v i2i召回>graph2vec召回
+
+
+
 一.Neural Recommender Systems 
 
 NCF(Neural collaborative filtering_2017)
