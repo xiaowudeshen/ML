@@ -37,6 +37,7 @@ join
 (select gid from feed_top_content lateral view explode(split(top_category, ',')) tb as category
 where id > 3719 and to_date(update_time) >= '${yesterday}'  and category in ('top_pv', 'top_ctr', 'top_durtion') group by gid ) top_info
 on short_video.gid = top_info.gid limit 200000000" > ../data/${day}/two_dnn/top_feed_info_${day}.csv
+
     awk 'BEGIN{FS="\t";OFS="\t"}NR==FNR{a[$1]=0;next} {if($1 in a){print $0}}' ../data/${day}/two_dnn/top_feed_info_${day}.csv  ../data/${day}/two_dnn/all_feed_vec_${day} > ../data/${day}/two_dnn/top_feed_vec_${day}
     
     python3 merge_col_info.py ../data/${day}/two_dnn/top_feed_vec_${day} > ../data/${day}/two_dnn/merge_col_feed_vec_${day} 
