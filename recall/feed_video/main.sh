@@ -31,6 +31,7 @@ function fetch_feed_data()
 limit 200000000" >../data/${day}/two_dnn/all_feed_info_${day}.csv
     python3 fetch_gid_code.py ../data/${day}/two_dnn/all_feed_info_${day}.csv >  ../data/${day}/two_dnn/all_feed_vec_${day}
 
+    #fetch 高热doc
     hive -e "select short_video.gid gid from
 (select gid FROM feed_short_video WHERE status = 2 and feed_content_from = 'qtt' and comment_count > 0)  short_video
 join
